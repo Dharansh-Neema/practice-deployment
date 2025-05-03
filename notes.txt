@@ -1,0 +1,20 @@
+pass : 63bT8WMp7H*NN*G
+user : dhaUser
+
+PORT = 3001
+MONGO_URL = mongodb+srv://dhaUser:63bT8WMp7H*NN*G@productdemo.1rxagmy.mongodb.net/products?retryWrites=true&w=majority&appName=productDemo
+
+
+
+for frontend 
+
+npm create vite@latest .   
+npm install
+npm i @chakra-ui/react@2 @emotion/react @emotion/styled framer-motion
+
+
+<ChakraProvider>
+<App />
+</ChakraProvider>
+
+npm install react-router-dom
