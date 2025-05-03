@@ -8,17 +8,17 @@ echo "⬇️ Installing Node.js and npm..."
 # Install Node.js (LTS) from NodeSource
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs
-
+sudo npm install -g npm@11.3.0
 echo "🧪 Verifying Node.js and npm installation..."
 node -v
 npm -v
 
 
 echo "📦 Installing backend dependencies..."
-npm install
-npm install pm2 -g
-pm2 start index.js --name backend-service
-pm2 save
+sudo npm install
+sudo npm install pm2 -g
+sudo pm2 start ./backend/index.js --name backend-service
+sudo pm2 save
 
 echo "🚀 Starting backend service..."
 

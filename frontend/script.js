@@ -6,7 +6,7 @@ if(document.getElementById("createForm")){
         const description = document.getElementById("description").value;
         const rating = document.getElementById("rating").value;
         const product = {name, price, description, rating};
-        fetch("http://localhost:3001/api/products/create", {
+        fetch("http://13.233.157.227:8000/api/products/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -24,7 +24,7 @@ if(document.getElementById("createForm")){
 }
 
 if (document.getElementById("root")) {
-   fetch("http://localhost:3001/api/products/").then(response => response.json()).then(data => {
+   fetch("http://13.233.157.227:8000/api/products/").then(response => response.json()).then(data => {
     const list = document.getElementById('root');
     console.log(data);
     if (data.length === 0) {

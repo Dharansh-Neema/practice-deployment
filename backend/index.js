@@ -17,11 +17,9 @@ app.set("view engine", "ejs");
 // API routes
 app.use("/api/products", productRouter);
 app.get("/", (req, res) => {
-  res.render("../backend/views/homepage")
+  res.json("Welcome to product world")
 });
-app.get("/create", (req, res) => {
-  res.render("../backend/views/createproduct")
-});
+
 
 const PORT = process.env.PORT || 3000;
 console.log(process.env.PORT)
