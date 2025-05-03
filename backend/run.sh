@@ -16,10 +16,10 @@ npm -v
 
 echo "📦 Installing backend dependencies..."
 npm install
+npm install pm2 -g
+pm2 start index.js --name backend-service
+pm2 save
 
 echo "🚀 Starting backend service..."
-# Adjust this command depending on how you run the server
-# For example, replace with `npm run start` or `node app.js` if needed
-node index.js &
 
 
